@@ -34,3 +34,17 @@ print(lause2.lower())
 arvud2=[t_arv(sona) for sona in lause2.lower().split()]
 print(arvud2)
 print(ttest_ind(arvud1, arvud2))
+def keskmine(m):
+    return sum(m)/len(m)
+print(keskmine(arvud1), keskmine(arvud2))
+def t_osa(sona):
+    return len([t for t in sona if t in th])/len(sona)
+osakaalud1=[t_osa(sona) for sona in lause1.lower().split()]
+print(osakaalud1)
+print(keskmine(osakaalud1))
+osakaalud2=[t_osa(sona) for sona in lause2.lower().split()]
+print(osakaalud2)
+print(keskmine(osakaalud2))
+print(ttest_ind(osakaalud1, osakaalud2))
+import statsmodels.stats.api as sms
+#cm=sms.CompareMeans
