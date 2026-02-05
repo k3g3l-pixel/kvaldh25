@@ -1,4 +1,4 @@
 # kvaldh25
-Kvalitatiivne digihumanitaaria
+Kvantitatiivne digihumanitaaria - kevadsemester 2026
 
 Kursuse materjalid
