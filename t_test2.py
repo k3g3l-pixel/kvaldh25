@@ -21,3 +21,16 @@ print(sum(sonapikkused1)/len(sonapikkused1))
 print(ttest_ind(sonapikkused1, sonapikkused2))
 #git add .
 #git push
+th="aeiouõäöü"
+print(lause1.lower())
+print([t for t in "koolimajja" if t in th])
+print(len([t for t in "koolimajja" if t in th]))
+def t_arv(sona):
+    return len([t for t in sona if t in th])
+print(t_arv("kalamaja"))
+arvud1=[t_arv(sona) for sona in lause1.lower().split()]
+print(arvud1)
+print(lause2.lower())
+arvud2=[t_arv(sona) for sona in lause2.lower().split()]
+print(arvud2)
+print(ttest_ind(arvud1, arvud2))
