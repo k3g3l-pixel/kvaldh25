@@ -47,4 +47,5 @@ print(osakaalud2)
 print(keskmine(osakaalud2))
 print(ttest_ind(osakaalud1, osakaalud2))
 import statsmodels.stats.api as sms
-#cm=sms.CompareMeans
+cm=sms.CompareMeans(sms.DescrStatsW(osakaalud1), sms.DescrStatsW(osakaalud2))
+print(cm.tconfint_diff(usevar='unequal'))
